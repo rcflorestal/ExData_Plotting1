@@ -46,15 +46,15 @@ df <- dataSet %>%
 as_tibble(df)
 
 ## Making Plots ##
+## Open the graphics devices to save the plot
+png("plot1.png", width = 480, height = 480)
+
+## Set plot 1
 hist(df$Global_active_power,  ## Set plot1
      col = "red",
      main = "Global Active Power",
      xlab = "Global Active Power (Kilowatts)")
 
-## Save plot1 as png file
-dev.copy(png, "C:/Data-Science-Foundations-using-R-Specialization/Exploratory-Data-Analysis/Course_Project_1/plot1.png",
-         width = 480,   ## These lines are not necessary 
-         height = 480)  ## because the pattern is 480x480 px
-
+## Close the graphics devices.
 dev.off()
 
