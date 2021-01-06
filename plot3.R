@@ -13,10 +13,10 @@ library(dplyr)
 library(tidyr)
 
 ## Set the work directory
-setwd("C:/Data-Science-Foundations-using-R-Specialization/Exploratory-Data-Analysis/Course_Project_1")
+setwd("C:/Data-Science-Foundations-using-R-Specialization/Exploratory-Data-Analysis/ExData_Plotting1")
 
 ## Loading the data ##
-dataSet <- read.table(file = "./data/household_power_consumption.txt",
+dataSet <- read.table(file = "./household_power_consumption.txt",
                       header = TRUE,
                       sep = ";",
                       na.strings = "?")
